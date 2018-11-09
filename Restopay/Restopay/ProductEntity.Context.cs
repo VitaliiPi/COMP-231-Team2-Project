@@ -12,6 +12,8 @@ namespace Restopay
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class ProductsDatabaseEntities : DbContext
     {
@@ -30,5 +32,11 @@ namespace Restopay
         public virtual DbSet<cart> carts { get; set; }
         public virtual DbSet<dessert> desserts { get; set; }
         public virtual DbSet<mainCourse> mainCourses { get; set; }
+        public virtual DbSet<OrdersInProgress> OrdersInProgresses { get; set; }
+    
+        public virtual ObjectResult<Nullable<long>> GetNextSequenceValue()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<long>>("GetNextSequenceValue");
+        }
     }
 }

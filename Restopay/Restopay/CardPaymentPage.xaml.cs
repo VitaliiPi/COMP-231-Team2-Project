@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,21 +16,18 @@ using System.Windows.Shapes;
 namespace Restopay
 {
     /// <summary>
-    /// Interaction logic for CustomerPage.xaml
+    /// Interaction logic for CardPaymentPage.xaml
     /// </summary>
-    public partial class CustomerPage : Page
+    public partial class CardPaymentPage : Page
     {
-        
-
-        public CustomerPage()
+        public CardPaymentPage()
         {
             InitializeComponent();
-            ApplicationProp.tableNumber = 10;
         }
 
         private void ButtonMenu_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new MenuPage());
+            this.NavigationService.Navigate(new CustomerPage());
         }
     }
 }

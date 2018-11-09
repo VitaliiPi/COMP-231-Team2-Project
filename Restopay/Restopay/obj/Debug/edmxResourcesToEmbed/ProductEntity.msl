@@ -63,5 +63,24 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetNextSequenceValue" FunctionName="ProductsDatabaseModel.Store.GetNextSequenceValue" />
+    <EntitySetMapping Name="OrdersInProgresses">
+      <EntityTypeMapping TypeName="ProductsDatabaseModel.OrdersInProgress">
+        <MappingFragment StoreEntitySet="OrdersInProgress">
+          <ScalarProperty Name="WaiterStatus_" ColumnName="WaiterStatus " />
+          <ScalarProperty Name="BartenderStatus_" ColumnName="BartenderStatus " />
+          <ScalarProperty Name="CookStatus_" ColumnName="CookStatus " />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="TableNumber" ColumnName="TableNumber" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

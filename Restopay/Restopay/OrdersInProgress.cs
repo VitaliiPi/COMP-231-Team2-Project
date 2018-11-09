@@ -12,15 +12,19 @@ namespace Restopay
     using System;
     using System.Collections.Generic;
     
-    public partial class cart
+    public partial class OrdersInProgress
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
-        public Nullable<double> Amount { get; set; }
+        public int Quantity { get; set; }
+        public double Amount { get; set; }
         public string Category { get; set; }
         public int TableNumber { get; set; }
-        public Nullable<long> OrderNumber { get; set; }
-        public Nullable<int> Quantity { get; set; }
+        public long OrderNumber { get; set; }
+        public string DateTime { get; set; }
+        public string CookStatus_ { get; set; }
+        public string BartenderStatus_ { get; set; }
+        public string WaiterStatus_ { get; set; }
     }
 }

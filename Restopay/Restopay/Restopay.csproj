@@ -64,10 +64,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ApplicationProp.cs" />
+    <Compile Include="CardPaymentPage.xaml.cs">
+      <DependentUpon>CardPaymentPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CartPage.xaml.cs">
       <DependentUpon>CartPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OrdersInProgress.cs">
+      <DependentUpon>ProductEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaypalPaymentPage.xaml.cs">
+      <DependentUpon>PaypalPaymentPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TotalAmount.cs" />
+    <Page Include="CardPaymentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CartPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -107,6 +121,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaypalPaymentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -165,6 +183,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\price.png" />
     <Content Include="ProductEntity.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ProductEntity.Context.cs</LastGenOutput>
@@ -179,5 +198,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

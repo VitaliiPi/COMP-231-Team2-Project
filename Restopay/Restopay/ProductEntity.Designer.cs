@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\CENTENNIAL\Project1\Restopay\Restopay\Restopay\ProductEntity.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\GIT\testDDD\COMP-231-Team2-Project\Restopay\Restopay\ProductEntity.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

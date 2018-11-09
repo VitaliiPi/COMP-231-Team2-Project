@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\CENTENNIAL\Project1\Restopay\Restopay\Restopay\obj\Debug\
+C:\GIT\testDDD\COMP-231-Team2-Project\Restopay\Restopay\obj\Debug\
 Restopay
 none
 false
 DEBUG;TRACE
-C:\CENTENNIAL\Project1\Restopay\Restopay\Restopay\App.xaml
-41898299689
+C:\GIT\testDDD\COMP-231-Team2-Project\Restopay\Restopay\App.xaml
+6-831874297
 2-1960332451
-18343937041
-18433139272
-CartPage.xaml;CustomerPage.xaml;MainWindow.xaml;MenuPage.xaml;
+22-1736574090
+18902292554
+CardPaymentPage.xaml;CartPage.xaml;CustomerPage.xaml;MainWindow.xaml;MenuPage.xaml;PaypalPaymentPage.xaml;
 
 False
 

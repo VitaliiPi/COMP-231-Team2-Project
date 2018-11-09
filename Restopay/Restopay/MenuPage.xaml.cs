@@ -192,8 +192,8 @@ namespace Restopay
                 cartItem.Quantity = item.Quantity;
                 cartItem.Amount = item.Amount;
                 cartItem.Category = item.Category;
-                cartItem.OrderNumber = 12345;
-                cartItem.TableNumber = 5;
+                
+                cartItem.TableNumber = ApplicationProp.tableNumber;
                 _db.carts.Add(cartItem);
                 _db.SaveChanges();
             }
@@ -205,7 +205,6 @@ namespace Restopay
             foreach (Product i in bill)
             {
                 i.Amount = i.Price * i.Quantity;
-
             }
             gridBill.Items.Refresh();
             tAmount.subtotal = (getTotalAmount(bill)).ToString();
