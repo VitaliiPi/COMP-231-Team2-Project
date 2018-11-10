@@ -9,7 +9,7 @@
       Title="CartPage">
 
     <Grid Background="#FFBDC6DA" Margin="0,0,0,-155">
-        <Label Content="CART" HorizontalAlignment="Left" Margin="377,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="CART" FontWeight="Bold" FontFamily="Showcard Gothic" FontSize="18" HorizontalAlignment="Left" Margin="359,10,0,0" VerticalAlignment="Top"/>
         <DataGrid x:Name="gridBill"  HorizontalAlignment="Left" Height="268" Margin="186,41,0,0" VerticalAlignment="Top" Width="408" FontSize="14" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True" Width="*"/>
