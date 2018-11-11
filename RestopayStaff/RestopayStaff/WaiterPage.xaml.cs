@@ -92,7 +92,7 @@ namespace RestopayStaff
             }
             catch (Exception)
             {
-                throw;
+               // throw;
             }
         }
 

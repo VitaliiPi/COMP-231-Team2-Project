@@ -9,7 +9,7 @@
       Title="CustomerPage">
 
     <Grid Background="#FFBDC6DA">
-        <Label Content="Restourant LOGO" HorizontalAlignment="Left" Margin="270,43,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Showcard Gothic" FontSize="24"/>
+        <Label Content="Restaurant LOGO" HorizontalAlignment="Left" Margin="270,43,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Showcard Gothic" FontSize="24"/>
         <Button Content="Go to Menu" HorizontalAlignment="Left" Margin="270,312,0,0" VerticalAlignment="Top" Width="254" Click="ButtonMenu_Click" Height="59" FontSize="24" Background="#FF267CB9" FontWeight="Bold" FontFamily="Showcard Gothic" Foreground="#FFF2F2F5"/>
         <Image Source ="pack://application:,,,/Images/price.png" HorizontalAlignment="Left" Height="100" Margin="345,147,0,0" VerticalAlignment="Top" Width="109"/>
         <Image Source ="Images/price.png" HorizontalAlignment="Left" Height="100" Margin="567,147,0,0" VerticalAlignment="Top" Width="109"/>

@@ -226,7 +226,15 @@ namespace Restopay
 
         private void RemoveRaw(object sender, RoutedEventArgs e)
         {
-            bill.Remove(gridBill.SelectedItem as Product);
+            try
+            {
+                bill.Remove(gridBill.SelectedItem as Product);
+            }
+            catch (Exception)
+            {
+
+                //throw;
+            }
         }
     }
 }
