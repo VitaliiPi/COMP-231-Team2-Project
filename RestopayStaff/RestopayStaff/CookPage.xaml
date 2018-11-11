@@ -10,7 +10,7 @@
 
     <Grid Background="#FFBDC6DA">
         <Label Content="COOK PAGE" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Showcard Gothic"/>
-            <DataGrid x:Name="grid"  HorizontalAlignment="Left" Height="364" Margin="0,40,0,0" VerticalAlignment="Top" Width="800" FontSize="14" AutoGenerateColumns="False" >
+        <DataGrid Background="#FFBDC6DA" x:Name="grid"  HorizontalAlignment="Left" Height="364" Margin="0,40,0,0" VerticalAlignment="Top" Width="800" FontSize="14" AutoGenerateColumns="False" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Order number" Binding="{Binding OrderNumber}" IsReadOnly="True" Width="100"/>
                 <DataGridTextColumn Header="Date" Binding="{Binding DateTime}" IsReadOnly="True" Width="180"/>

@@ -30,7 +30,8 @@ namespace Restopay
             tAmount.subtotal = "0";
             tAmount.Tax = "0";
             tAmount.Total = "0";
-            var query1 = from b in _db.carts select b;
+            var query1 = from b in _db.carts where b.TableNumber== ApplicationProp.
+                         tableNumber select b;
             foreach (var item in query1)
             {
                 cartItems.Add(new cart { Name = item.Name, Price = item.Price, 
@@ -74,8 +75,6 @@ namespace Restopay
             foreach (var item in query1)
             {
                 _db.carts.Remove(item);
-                
-               
             }
             _db.SaveChanges();
 
