@@ -47,6 +47,8 @@ namespace RestopayStaff
                         Name = item.Name,
                         Quantity = item.Quantity,
                         OrderNumber = item.OrderNumber,
+                        WaiterStatus_ = item.WaiterStatus_,
+                        Amount = item.Amount,
                         DateTime = item.DateTime,
                         //CookStatus_ = item.CookStatus_,
                         TableNumber = item.TableNumber
@@ -92,7 +94,7 @@ namespace RestopayStaff
             }
             catch (Exception)
             {
-               // throw;
+                MessageBox.Show("Something went wrong");
             }
         }
 
@@ -100,6 +102,11 @@ namespace RestopayStaff
         private void ButtonExitClick(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new StaffPage());
+        }
+
+        private void ButtonMenuClick(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new MenuPageCBW());
         }
     }
 }

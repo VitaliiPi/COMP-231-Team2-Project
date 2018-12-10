@@ -12,7 +12,7 @@ namespace RestopayStaff
     using System;
     using System.Collections.Generic;
     
-    public partial class mainCourse
+    public partial class mainCourse :Product
     {
         public int Id { get; set; }
         public string Name { get; set; }

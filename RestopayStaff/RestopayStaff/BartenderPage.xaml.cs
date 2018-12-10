@@ -90,5 +90,10 @@ namespace RestopayStaff
         {
             this.NavigationService.Navigate(new StaffPage());
         }
+
+        private void ButtonMenuClick(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new MenuPageCBW());
+        }
     }
 }
