@@ -15,24 +15,11 @@
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}"  Width="100"/>
                 <DataGridTextColumn Header="Name" Binding="{Binding Name}"  Width="*"/>
                 <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="100"/>
-
-                <!--<DataGridTemplateColumn Header="Actions" Width="*">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <Button Click="RemoveItem1">Delete Item</Button>
-                                <Button Click="UpdateItem1">Update Item</Button>
-                                <Button Click="InsertItem1">Insert Item</Button>
-                            </StackPanel>
-                        </DataTemplate>
-
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>-->
             </DataGrid.Columns>
 
         </DataGrid>
 
-        <Button Content="Back" HorizontalAlignment="Left" Margin="124,12,0,0" VerticalAlignment="Top" Width="75" Click="ButtonExitClick" FontSize="16"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="124,12,0,0" VerticalAlignment="Top" Width="75" Click="ButtonExitClick" FontSize="16" Background="#FFF24A36"/>
         <ComboBox x:Name="menuCategory" HorizontalAlignment="Left" Margin="365,42,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" FontSize="16" >
             <ComboBox.Items>
                 <ComboBoxItem>Beverages</ComboBoxItem>

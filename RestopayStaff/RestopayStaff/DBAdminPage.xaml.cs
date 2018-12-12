@@ -17,9 +17,6 @@ using System.Windows.Threading;
 
 namespace RestopayStaff
 {
-    /// <summary>
-    /// Interaction logic for CookPage.xaml
-    /// </summary>
     public partial class DBAdminPage : Page
     {
 
@@ -52,10 +49,6 @@ namespace RestopayStaff
             }
         }
 
-        private void grid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
 
         private void RemoveItem1(object sender, RoutedEventArgs e)
         {

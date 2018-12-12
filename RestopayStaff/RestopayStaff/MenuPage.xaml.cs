@@ -17,9 +17,6 @@ using System.Windows.Threading;
 
 namespace RestopayStaff
 {
-    /// <summary>
-    /// Interaction logic for CookPage.xaml
-    /// </summary>
     public partial class MenuPage : Page
     {
 

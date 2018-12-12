@@ -17,9 +17,6 @@ using System.Windows.Threading;
 
 namespace RestopayStaff
 {
-    /// <summary>
-    /// Interaction logic for CookPage.xaml
-    /// </summary>
     public partial class BartenderPage : Page
     {
         
@@ -81,7 +78,7 @@ namespace RestopayStaff
             catch (Exception)
             {
 
-              //  throw;
+                MessageBox.Show("Something went wrong");
             }
         }
 

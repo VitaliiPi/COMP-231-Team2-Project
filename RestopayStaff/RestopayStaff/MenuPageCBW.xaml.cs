@@ -17,18 +17,10 @@ using System.Windows.Threading;
 
 namespace RestopayStaff
 {
-    /// <summary>
-    /// Interaction logic for CookPage.xaml
-    /// </summary>
     public partial class MenuPageCBW : Page
     {
 
         ProductsDatabaseEntities _db = new ProductsDatabaseEntities();
-
-        private static ObservableCollection<Product> beverageOC;
-        private static ObservableCollection<Product> appetizerOC;
-        private static ObservableCollection<Product> mainCourseOC;
-        private static ObservableCollection<Product> dessertOC;
         int category = 1;
         public MenuPageCBW()
         {
@@ -42,23 +34,6 @@ namespace RestopayStaff
 
         }
 
-
-        private void RemoveRaw(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                int id = (grid.SelectedItem as OrdersInProgress).Id;
-
-                _db.SaveChanges();
-                beverageOC.Remove(grid.SelectedItem as Product);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Something went wrong");
-            }
-        }
-
-
         private void ButtonExitClick(object sender, RoutedEventArgs e)
         {
             //this.NavigationService.Navigate(new StaffPage());
@@ -70,11 +45,6 @@ namespace RestopayStaff
             {
                 MessageBox.Show("No entries in back navigation history.");
             }
-        }
-
-        private void grid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
 
         private void RemoveItem1(object sender, RoutedEventArgs e)

@@ -36,6 +36,6 @@ C:\GIT\testDDD\COMP-231-Team2-Project\RestopayStaff\RestopayStaff\obj\Debug\Menu
 C:\GIT\testDDD\COMP-231-Team2-Project\RestopayStaff\RestopayStaff\obj\Debug\OwnerPage.g.cs
 C:\GIT\testDDD\COMP-231-Team2-Project\RestopayStaff\RestopayStaff\obj\Debug\OwnerPage.baml
 C:\GIT\testDDD\COMP-231-Team2-Project\RestopayStaff\RestopayStaff\obj\Debug\DBAdminPage.g.cs
-C:\GIT\testDDD\COMP-231-Team2-Project\RestopayStaff\RestopayStaff\obj\Debug\OrdersArchivePage - Copy.g.cs
 C:\GIT\testDDD\COMP-231-Team2-Project\RestopayStaff\RestopayStaff\obj\Debug\DBAdminPage.baml
-C:\GIT\testDDD\COMP-231-Team2-Project\RestopayStaff\RestopayStaff\obj\Debug\OrdersArchivePage - Copy.baml
+C:\GIT\testDDD\COMP-231-Team2-Project\RestopayStaff\RestopayStaff\obj\Debug\OrdersArchivePage.g.cs
+C:\GIT\testDDD\COMP-231-Team2-Project\RestopayStaff\RestopayStaff\obj\Debug\OrdersArchivePage.baml

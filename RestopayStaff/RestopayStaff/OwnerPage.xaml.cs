@@ -17,9 +17,6 @@ using System.Windows.Threading;
 
 namespace RestopayStaff
 {
-    /// <summary>
-    /// Interaction logic for CookPage.xaml
-    /// </summary>
     public partial class OwnerPage : Page
     {
         
@@ -109,7 +106,7 @@ namespace RestopayStaff
             }
             catch (Exception)
             {
-               // throw;
+                MessageBox.Show("Something went wrong");
             }
         }
         
@@ -123,9 +120,9 @@ namespace RestopayStaff
             this.NavigationService.Navigate(new StaffPage());
         }
 
-        private void grid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ArchidedOrders_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new OrdersArchivePage());
         }
     }
 }
