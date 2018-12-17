@@ -40,5 +40,20 @@ namespace RestopayStaff
             this.NavigationService.Navigate(new WaiterPage());
 
         }
+
+        private void MANAGER_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ManagerPage());
+        }
+
+        private void OWNER_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new OwnerPage());
+        }
+
+        private void ADMINISTRATOR_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new DBAdminPage());
+        }
     }
 }

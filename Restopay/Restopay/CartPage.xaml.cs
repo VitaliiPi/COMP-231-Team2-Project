@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,7 @@ namespace Restopay
     public partial class CartPage : Page
     {
         ProductsDatabaseEntities _db = new ProductsDatabaseEntities();
-        private List<cart> cartItems = new List<cart>();
+        private static ObservableCollection<cart> cartItems = new ObservableCollection<cart>();
         TotalAmount tAmount = new TotalAmount();
         
         public CartPage()
@@ -34,7 +35,9 @@ namespace Restopay
                          tableNumber select b;
             foreach (var item in query1)
             {
-                cartItems.Add(new cart { Name = item.Name, Price = item.Price, 
+                cartItems.Add(new cart {
+                    Id = item.Id,
+                    Name = item.Name, Price = item.Price, 
                     Quantity = item.Quantity, Amount = item.Amount,
                     Category = item.Category, TableNumber = item.TableNumber
                 });
@@ -48,7 +51,7 @@ namespace Restopay
             this.DataContext = tAmount;
 
         }
-        private double getTotalAmount(List<cart> x)
+        private double getTotalAmount(ObservableCollection<cart> x)
         {
             double sub = 0;
             foreach (var i in x)
@@ -137,6 +140,28 @@ namespace Restopay
             }
 
 
+        }
+
+        private void RemoveRaw(object sender, RoutedEventArgs e)
+        {
+            int id = (gridBill.SelectedItem as cart).Id;
+            if (!(gridBill.SelectedItem as cart).Name.Equals(null) )
+            {
+                cart car = (from c in _db.carts where c.Id == id select c).Single();
+                _db.carts.Remove(car);
+                _db.SaveChanges();
+                cart carOL = (from c in cartItems where c.Id == id select c).Single();
+                cartItems.Remove(carOL);
+                gridBill.ItemsSource = cartItems;
+                foreach (cart i in cartItems)
+                {
+                    i.Amount = i.Price * i.Quantity;
+                }
+                gridBill.Items.Refresh();
+                tAmount.subtotal = (getTotalAmount(cartItems)).ToString();
+                tAmount.Tax = (twoSignsAfterDot(getTotalAmount(cartItems) * 0.13)).ToString();
+                tAmount.Total = (twoSignsAfterDot(getTotalAmount(cartItems) * 0.13 + getTotalAmount(cartItems))).ToString();
+            }
         }
     }
 }

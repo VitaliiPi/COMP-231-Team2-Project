@@ -9,15 +9,17 @@
       Title="WaiterPage">
 
     <Grid Background="#FFBDC6DA">
-        <Label Content="WAITER PAGE" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Showcard Gothic"/>
-        <DataGrid Background="#FFBDC6DA" x:Name="grid"  HorizontalAlignment="Left" Height="364" Margin="0,40,0,0" VerticalAlignment="Top" Width="800" FontSize="14" AutoGenerateColumns="False" >
+        <Label Content="WAITER PAGE" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Showcard Gothic" FontSize="14"/>
+        <DataGrid Background="#FFBDC6DA" x:Name="grid"  HorizontalAlignment="Left" Height="364" Margin="0,58,0,0" VerticalAlignment="Top" Width="800" FontSize="14" AutoGenerateColumns="False" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Order number" Binding="{Binding OrderNumber}" IsReadOnly="True" Width="100"/>
-                <DataGridTextColumn Header="Date" Binding="{Binding DateTime}" IsReadOnly="True" Width="180"/>
-                <DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True" Width="180"/>
+                <DataGridTextColumn Header="Order#" Binding="{Binding OrderNumber}" IsReadOnly="True" Width="60"/>
+                <DataGridTextColumn Header="Date" Binding="{Binding DateTime}" IsReadOnly="True" Width="165"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True" Width="170"/>
 
-                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="70"/>
-                <DataGridTextColumn Header="Table #" Binding="{Binding TableNumber}" IsReadOnly="True" Width="80"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="55"/>
+                <DataGridTextColumn Header="Table#" Binding="{Binding TableNumber}" IsReadOnly="True" Width="55"/>
+                <DataGridTextColumn Header="Amount" Binding="{Binding Amount}" IsReadOnly="True" Width="70"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding WaiterStatus_}" IsReadOnly="True" Width="90"/>
 
                 <DataGridTemplateColumn Header="Change Status" Width="*">
                     <DataGridTemplateColumn.CellTemplate>
@@ -29,9 +31,10 @@
             </DataGrid.Columns>
 
         </DataGrid>
-        
-        <Button Content="Update" HorizontalAlignment="Left" Margin="623,12,0,0" VerticalAlignment="Top" Width="167" Click="Button_Click"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="140,12,0,0" VerticalAlignment="Top" Width="75" Click="ButtonExitClick"/>
+
+        <Button Content="Update" HorizontalAlignment="Left" Margin="623,12,0,0" VerticalAlignment="Top" Width="167" Click="Button_Click" FontSize="14" Background="#FFA9DF3C"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="158,12,0,0" VerticalAlignment="Top" Width="75" Click="ButtonExitClick" FontSize="14" Background="#FFF24A36"/>
+        <Button Content="Menu" HorizontalAlignment="Left" Margin="273,12,0,0" VerticalAlignment="Top" Width="75" Click="ButtonMenuClick" FontSize="14" Background="#FFE6F094"/>
 
     </Grid>
 </Page>
